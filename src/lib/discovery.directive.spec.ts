@@ -1,4 +1,4 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import {Component} from '@angular/core';
 import {DiscoveryDirective} from './discovery.directive';
 import {DiscoveryService} from './discovery.service';
@@ -53,7 +53,7 @@ describe('Directive: Discovery', () => {
     expect(div).toBeTruthy();
   });
 
-  it('should be visible if service is present', async(() => {
+  it('should be visible if service is present', waitForAsync(() => {
     spyOn(window, 'open');
 
     mockService.first = jasmine.createSpy('first').and.returnValue(of({url: 'my_url'}));
