@@ -12,7 +12,7 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "src/tsconfig.lib.json",
-            "project": "src/ng-package.json"
+            "project": "ng-package.json"
           }
         },
         "test": {
@@ -29,7 +29,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.json"
+              "tsconfig.json"
             ],
             "exclude": []
           }
