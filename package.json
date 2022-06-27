@@ -1,6 +1,6 @@
 {
   "name": "@vidal-community/ng2-discovery",
-  "version": "5.0.1",
+  "version": "5.0.2-1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -8,12 +8,11 @@
   },
   "scripts": {
     "test": "ng test --watch=false",
-    "build-ng": "ng-packagr -p ng-package.json",
-    "build-prerelease": "npm version prerelease --no-git-tag-version && npm i && ng-packagr -p ng-package.json",
+    "build-prerelease": "npm version prerelease --no-git-tag-version && npm i && ng build",
     "package-prerelease": "cd dist/@vidal-community/ng2-discovery && find . -type f -name 'vidal-community-ng2-discovery-*.tgz' -delete && npm pack",
     "publish-prerelease": "npm publish dist/@vidal-community/ng2-discovery/vidal-community-ng2-discovery-*.tgz",
     "build-and-publish-prerelease": "npm run build-prerelease && npm run package-prerelease && npm run publish-prerelease",
-    "build-release": "npm i && ng-packagr -p ng-package.json",
+    "build-release": "npm i && ng build",
     "package-release": "cd dist/@vidal-community/ng2-discovery && find . -type f -name 'vidal-community-ng2-discovery-*.tgz' -delete && npm pack",
     "publish-release": "npm publish dist/@vidal-community/ng2-discovery/vidal-community-ng2-discovery-*.tgz",
     "build-and-publish-release": "npm run build-release && npm run package-release && npm run publish-release",
@@ -30,6 +29,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^12.2.17",
     "@angular/animations": "12.2.16",
     "@angular/cli": "~12.2.17",
     "@angular/common": "12.2.16",
@@ -54,6 +54,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^12.2.7",
     "protractor": "~7.0.0",
     "rxjs-tslint": "^0.1.8",
     "ts-node": "~9.0.0",
