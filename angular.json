@@ -28,7 +28,6 @@
       }
     }
   },
-  "defaultProject": "ng2-discovery",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "css"
