@@ -1,8 +1,6 @@
 Vidal Service Discovery for Angular
 ===
 
-![alt travis](https://travis-ci.org/vidal-community/ng2-discovery.svg?branch=master)
-
 # Use It
 
 Install this library :
@@ -27,6 +25,8 @@ Here is the compatibility matrix:
 | ^12           | >=12     |
 | ^13           | >=13     |
 | ^14           | >=14     |
+| ^15           | >=15     |
+
 See compatible versions on [npm semver calculator](https://semver.npmjs.com).
 
 # Build It
