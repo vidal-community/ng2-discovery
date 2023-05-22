@@ -26,6 +26,7 @@ Here is the compatibility matrix:
 | ^13           | >=13     |
 | ^14           | >=14     |
 | ^15           | >=15     |
+| ^16           | >=16     |
 
 See compatible versions on [npm semver calculator](https://semver.npmjs.com).
 
