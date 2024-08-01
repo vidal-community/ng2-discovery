@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "downlevelIteration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
     "lib": [
       "es5",
       "dom",
       "es2015"
     ],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "removeComments": true,
     "outDir": "./",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "../node_modules/@types"
     ],
