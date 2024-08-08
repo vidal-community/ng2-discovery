@@ -15,18 +15,21 @@ You need `@angular` dependencies in your application to use this library.
 
 Here is the compatibility matrix:
 
-| ng2-discovery | Angular  |
-|---------------|----------|
-| ^1            | <=4      |
-| ^2            | >=6      |
-| ^3            | >=8.2.0  |
-| ^4            | >=10.1.0 |
-| ^5            | >=11.2.0 |
-| ^12           | >=12     |
-| ^13           | >=13     |
-| ^14           | >=14     |
-| ^15           | >=15     |
-| ^16           | >=16     |
+Please use the ng2-discovery branch corresponding to your Angular version.
+
+| ng2-discovery | Angular  | Branch to develop |
+|---------------|----------|-------------------|
+| ^1            | <=4      | N/A               |
+| ^2            | >=6      | N/A               |
+| ^3            | >=8.2.0  | N/A               |
+| ^4            | >=10.1.0 | N/A               |
+| ^5            | >=11.2.0 | N/A               |
+| ^12           | >=12     | N/A               |
+| ^13           | >=13     | N/A               |
+| ^14           | >=14     | N/A               |
+| ^15           | >=15     | N/A               |
+| ^16           | >=16     | angular16         |
+| ^17           | >=17     | angular17         |
 
 See compatible versions on [npm semver calculator](https://semver.npmjs.com).
 
